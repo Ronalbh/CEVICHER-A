@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BalPari Cevichería: comida marina fresca preparada al momento. Ceviche de pescado, leche de tigre, sudado de pescado, arroz con mariscos y más.">
+  <title>BalPari | Cevichería &amp; Cocina Marina</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido-principal">Ir al contenido principal</a>
+
+  <header class="site-header" id="inicio">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" aria-label="BalPari Cevichería Inicio">
+        <span class="brand-mark" aria-hidden="true">BP</span>
+        <span class="brand-text">
+          <span class="brand-name">BalPari</span>
+          <span class="brand-sub">Cevichería &amp; Cocina Marina</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="#especialidades">Especialidades</a></li>
+          <li><a href="#carta">La Carta</a></li>
+          <li><a href="#nosotros">Nuestra Cocina</a></li>
+          <li><a href="#horarios">Horarios &amp; FAQ</a></li>
+          <li><a href="#reservas">Reservas</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="btn-selection" id="open-drawer-btn" aria-haspopup="dialog" aria-controls="selection-drawer">
+          <span>Mi Selección</span>
+          <span class="selection-badge" id="selection-count">0</span>
+        </button>
+        <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú de navegación">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido-principal">
+    <!-- Hero tipográfico sin imágenes -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-backdrop" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="status-pill" id="live-status" aria-live="polite">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span id="live-status-text">Horario de atención: Mar a Dom · 11:00 a 17:00</span>
+          </div>
+
+          <h1 id="hero-title">
+            Frescura marina del día, preparada <em>al instante</em>.
+          </h1>
+
+          <p class="hero-lead">
+            En <strong>BalPari</strong> celebramos la cocina costera peruana con pesca seleccionada cada mañana, limón recién exprimido y el punto exacto de ají. Disfruta nuestro ceviche de pescado, leche de tigre, sudado de pescado, arroz con mariscos y especialidades de la casa.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#carta" class="btn btn-primary">Explorar la carta</a>
+            <a href="#reservas" class="btn btn-secondary">Reservar mesa</a>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Resumen de la propuesta BalPari">
+          <p class="eyebrow">Pizarra del día · BalPari</p>
+          <h2 class="hero-card-title">Los infaltables de nuestra barra</h2>
+          <ul class="pizarra-list">
+            <li>
+              <div>
+                <strong>Ceviche de Pescado</strong>
+                <span>Pesca blanca del día, ají limo, camote y choclo</span>
+              </div>
+              <span class="price-tag">S/ 32</span>
+            </li>
+            <li>
+              <div>
+                <strong>Leche de Tigre</strong>
+                <span>Concentrado cítrico con trozos de pescado y chicharrón de pota</span>
+              </div>
+              <span class="price-tag">S/ 22</span>
+            </li>
+            <li>
+              <div>
+                <strong>Sudado de Pescado</strong>
+                <span>Cocción lenta en chicha de jora, tomate, ají amarillo y yuca</span>
+              </div>
+              <span class="price-tag">S/ 36</span>
+            </li>
+            <li>
+              <div>
+                <strong>Arroz con Mariscos</strong>
+                <span>Salteado al wok con mixtura marina y salsa criolla</span>
+              </div>
+              <span class="price-tag">S/ 38</span>
+            </li>
+          </ul>
+          <p class="hero-card-note">
+            * Todos nuestros ceviches se preparan al momento y al nivel de picante que prefieras.
+          </p>
+        </aside>
+      </div>
+
+      <div class="pillars-bar">
+        <div class="container pillars-grid">
+          <div class="pillar-item">
+            <span class="pillar-num">01</span>
+            <div>
+              <strong>Pesca del día</strong>
+              <span>Selección fresca cada mañana</span>
+            </div>
+          </div>
+          <div class="pillar-item">
+            <span class="pillar-num">02</span>
+            <div>
+              <strong>Al momento</strong>
+              <span>Nada pre-cocido ni reposado</span>
+            </div>
+          </div>
+          <div class="pillar-item">
+            <span class="pillar-num">03</span>
+            <div>
+              <strong>Picante a tu gusto</strong>
+              <span>Sin ají, suave, clásico o bravo</span>
+            </div>
+          </div>
+          <div class="pillar-item">
+            <span class="pillar-num">04</span>
+            <div>
+              <strong>Porciones generosas</strong>
+              <span>Platos personales y para compartir</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Especialidades de la casa -->
+    <section class="section" id="especialidades" aria-labelledby="especialidades-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Especialidades BalPari</p>
+          <h2 id="especialidades-title">Nuestros cuatro pilares marinos</h2>
+          <p class="section-desc">
+            Recetas tradicionales con técnica precisa para resaltar el sabor natural del mar en cada plato.
+          </p>
+        </div>
+
+        <div class="specialties-grid">
+          <article class="specialty-card">
+            <div class="specialty-top">
+              <span class="specialty-index">01</span>
+              <span class="tag-pill">Barra Fría</span>
+            </div>
+            <h3>Ceviche de Pescado</h3>
+            <p>
+              Cubos firmes de pescado blanco fresco curados al instante en jugo de limón sutil, sal marina, culantro picado, ají limo aromático y cebolla morada en corte pluma. Servido con camote glaseado, choclo desgranado y cancha serrana crocante.
+            </p>
+            <div class="specialty-meta">
+              <span><strong>Guarnición:</strong> Camote, choclo y cancha</span>
+              <span class="price-strong">S/ 32.00</span>
+            </div>
+          </article>
+
+          <article class="specialty-card">
+            <div class="specialty-top">
+              <span class="specialty-index">02</span>
+              <span class="tag-pill">Clásico Revitalizante</span>
+            </div>
+            <h3>Leche de Tigre</h3>
+            <p>
+              Nuestro concentrado insignia elaborado con fondo marino, jugo de limón recién exprimido, apio, kion y ají limo. Acompañado de dados de pescado fresco, coronado con chicharrón crocante de pota, choclo y cancha tostada.
+            </p>
+            <div class="specialty-meta">
+              <span><strong>Presentación:</strong> Copa generosa</span>
+              <span class="price-strong">S/ 22.00</span>
+            </div>
+          </article>
+
+          <article class="specialty-card">
+            <div class="specialty-top">
+              <span class="specialty-index">03</span>
+              <span class="tag-pill">Cocina Caliente</span>
+            </div>
+            <h3>Sudado de Pescado</h3>
+            <p>
+              Filete entero cocido suavemente en su propio jugo con chicha de jora artesanal, aderezo de ají amarillo, tomate en gajos, cebolla roja, ajo y hojas de culantro. Llega bien caliente acompañado de yuca sancochada y arroz blanco graneado.
+            </p>
+            <div class="specialty-meta">
+              <span><strong>Guarnición:</strong> Yuca y arroz blanco</span>
+              <span class="price-strong">S/ 36.00</span>
+            </div>
+          </article>
+
+          <article class="specialty-card">
+            <div class="specialty-top">
+              <span class="specialty-index">04</span>
+              <span class="tag-pill">Al Wok</span>
+            </div>
+            <h3>Arroz con Mariscos</h3>
+            <p>
+              Arroz meloso salteado a fuego vivo con nuestra pasta de ajíes peruanos, vino blanco y caldo concentrado de mariscos. Con langostinos, calamar, pulpo, conchas de abanico, arvejas, pimiento y zarza criolla fresca.
+            </p>
+            <div class="specialty-meta">
+              <span><strong>Incluye:</strong> Salsa criolla y limón</span>
+              <span class="price-strong">S/ 38.00</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- La Carta Completa con filtros y buscador en JS -->
+    <section class="section section-alt" id="carta" aria-labelledby="carta-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Menú completo</p>
+          <h2 id="carta-title">Explora la carta de BalPari</h2>
+          <p class="section-desc">
+            Filtra por categoría, busca tu plato o ingrediente favorito y arma tu lista para consultar o reservar.
+          </p>
+        </div>
+
+        <div class="menu-controls" role="region" aria-label="Controles de filtrado del menú">
+          <div class="category-tabs" role="tablist" aria-label="Categorías de platos">
+            <button type="button" class="tab-btn active" role="tab" aria-selected="true" data-category="todos">Todos</button>
+            <button type="button" class="tab-btn" role="tab" aria-selected="false" data-category="ceviches">Ceviches &amp; Tiraditos</button>
+            <button type="button" class="tab-btn" role="tab" aria-selected="false" data-category="leches">Leches de Tigre</button>
+            <button type="button" class="tab-btn" role="tab" aria-selected="false" data-category="calientes">Sudados &amp; Calientes</button>
+            <button type="button" class="tab-btn" role="tab" aria-selected="false" data-category="arroces">Arroces &amp; Jaleas</button>
+            <button type="button" class="tab-btn" role="tab" aria-selected="false" data-category="bebidas">Bebidas &amp; Extras</button>
+          </div>
+
+          <div class="search-filter-row">
+            <div class="search-box">
+              <label for="menu-search" class="sr-only">Buscar plato o ingrediente</label>
+              <input type="search" id="menu-search" placeholder="Buscar plato o ingrediente (ej. mariscos, pota, yuca, chicha)..." autocomplete="off">
+            </div>
+
+            <div class="spice-filter">
+              <label for="spice-select">Nivel de picante:</label>
+              <select id="spice-select">
+                <option value="todos">Cualquiera</option>
+                <option value="sin-picante">Sin picante</option>
+                <option value="suave">Picante suave / regulable</option>
+                <option value="picante">Clásico / con ají</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <p class="results-meta" id="menu-results-meta" aria-live="polite"></p>
+
+        <div class="menu-grid" id="menu-grid">
+          <!-- Renderizado dinámicamente desde script.js -->
+        </div>
+
+        <div class="empty-state hidden" id="menu-empty">
+          <p>No encontramos platos que coincidan con tu búsqueda actual.</p>
+          <button type="button" class="btn btn-secondary" id="reset-filters-btn">Mostrar toda la carta</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nuestra Cocina y Personalizador de Picante -->
+    <section class="section" id="nosotros" aria-labelledby="nosotros-title">
+      <div class="container about-grid">
+        <div class="about-copy">
+          <p class="eyebrow">Nuestra filosofía</p>
+          <h2 id="nosotros-title">Cocina marina honesta, sin artificios</h2>
+          <p>
+            En <strong>BalPari</strong> creemos que un gran plato marino no necesita disfraces: todo comienza con materia prima fresca del día, cortes limpios y el respeto por el tiempo exacto de cocción o marinado.
+          </p>
+          <p>
+            Cada ceviche se prepara cuando llega tu pedido a la barra para que el pescado conserve su textura firme y el jugo mantenga su acidez vibrante. Nuestros sudados, parihuelas y arroces salen directo del fogón a tu mesa.
+          </p>
+
+          <dl class="highlights-dl">
+            <div>
+              <dt>Atención en salón y para llevar</dt>
+              <dd>Empaques separados para mantener crocante la cancha, los chicharrones y fresca la leche de tigre.</dd>
+            </div>
+            <div>
+              <dt>Dúos y Tríos Marinos</dt>
+              <dd>Combina ceviche, arroz con mariscos y chicharrón de pescado en una sola fuente.</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="spice-guide-card" aria-labelledby="spice-guide-title">
+          <p class="eyebrow">Guía interactiva</p>
+          <h3 id="spice-guide-title">Elige tu punto de ají</h3>
+          <p class="spice-guide-intro">
+            Selecciona un nivel para ver cómo preparamos tu ceviche o leche de tigre en BalPari:
+          </p>
+
+          <div class="spice-options" role="radiogroup" aria-label="Nivel de picante">
+            <button type="button" class="spice-opt active" data-level="sin">Sin ají</button>
+            <button type="button" class="spice-opt" data-level="suave">Suave</button>
+            <button type="button" class="spice-opt" data-level="clasico">Clásico</button>
+            <button type="button" class="spice-opt" data-level="bravo">Bien picante</button>
+          </div>
+
+          <div class="spice-detail" id="spice-detail" aria-live="polite">
+            <h4>Sin ají (Cero picor)</h4>
+            <p>Ideal para niños o paladares sensibles. Mantenemos todo el aroma del culantro, limón fresco y ajo suave sin agregar ají limo ni rocoto.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Horarios, Ubicación y Preguntas Frecuentes -->
+    <section class="section section-alt" id="horarios" aria-labelledby="horarios-title">
+      <div class="container info-grid">
+        <div class="info-card">
+          <p class="eyebrow">Visítanos</p>
+          <h2 id="horarios-title">Horarios &amp; Contacto</h2>
+          <p class="info-note">
+            Te esperamos para el almuerzo marino. También preparamos pedidos para recoger en local.
+          </p>
+
+          <ul class="hours-list" id="hours-list">
+            <li data-day="1"><span>Lunes</span><span>Cerrado (descanso)</span></li>
+            <li data-day="2"><span>Martes</span><span>11:00 a 17:00</span></li>
+            <li data-day="3"><span>Miércoles</span><span>11:00 a 17:00</span></li>
+            <li data-day="4"><span>Jueves</span><span>11:00 a 17:00</span></li>
+            <li data-day="5"><span>Viernes</span><span>11:00 a 17:30</span></li>
+            <li data-day="6"><span>Sábado</span><span>11:00 a 18:00</span></li>
+            <li data-day="0"><span>Domingo</span><span>11:00 a 18:00</span></li>
+          </ul>
+
+          <div class="contact-blocks">
+            <div>
+              <strong>Dirección del local</strong>
+              <p>Av. Principal del Mar 420 (Personaliza aquí tu dirección exacta)</p>
+            </div>
+            <div>
+              <strong>Teléfono / Pedidos</strong>
+              <p>+51 999 000 000 · reservas@balpari.pe</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-card">
+          <p class="eyebrow">Dudas frecuentes</p>
+          <h2>Preguntas sobre nuestro servicio</h2>
+
+          <div class="faq-list" id="faq-list">
+            <div class="faq-item">
+              <button type="button" class="faq-trigger" aria-expanded="false">
+                <span>¿Puedo pedir platos sin picante para niños o adultos?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" hidden>
+                <p>Sí. Todos nuestros ceviches, tiraditos, leches de tigre y arroces se preparan al instante, por lo que podemos hacerlos completamente sin ají o con picante aparte.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-trigger" aria-expanded="false">
+                <span>¿Tienen opciones familiares o para compartir?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" hidden>
+                <p>Contamos con Dúo Marino, Trío BalPari y Jalea Familiar, ideales para compartir entre 2 a 4 personas combinando barra fría y platos crocantes o arroces.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-trigger" aria-expanded="false">
+                <span>¿Cómo funciona la preparación para llevar?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" hidden>
+                <p>Empacamos el jugo cítrico, los crocantes (cancha y chicharrón) y el camote o yuca en compartimentos separados para que disfrutes la misma textura en casa.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-trigger" aria-expanded="false">
+                <span>¿Es necesario reservar los fines de semana?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" hidden>
+                <p>Atendemos por orden de llegada, pero los sábados y domingos entre las 13:00 y las 15:00 recomendamos reservar mesa desde el formulario inferior, especialmente para grupos de 4 a más personas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulario de Reservas y Consultas -->
+    <section class="section" id="reservas" aria-labelledby="reservas-title">
+      <div class="container reservation-layout">
+        <div class="reservation-intro">
+          <p class="eyebrow">Reserva tu mesa o haz un pedido</p>
+          <h2 id="reservas-title">Preparamos tu llegada a BalPari</h2>
+          <p>
+            Completa tus datos para registrar una solicitud de mesa o consulta de pedido. Si ya agregaste platos en <strong>Mi Selección</strong>, puedes incluirlos automáticamente en tu mensaje.
+          </p>
+          <div class="reservation-summary-box" id="form-selection-preview">
+            <strong>Tu selección actual:</strong>
+            <span id="form-selection-text">Aún no has agregado platos de la carta (opcional).</span>
+            <button type="button" class="link-btn hidden" id="attach-selection-btn">Incluir platos en las notas</button>
+          </div>
+        </div>
+
+        <form class="reservation-form" id="reservation-form" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="res-name">Nombre completo *</label>
+              <input type="text" id="res-name" name="name" placeholder="Ej. Carlos Mendoza" required>
+              <span class="field-error" id="err-name"></span>
+            </div>
+            <div class="form-field">
+              <label for="res-phone">Teléfono / WhatsApp *</label>
+              <input type="tel" id="res-phone" name="phone" placeholder="Ej. 987 654 321" required>
+              <span class="field-error" id="err-phone"></span>
+            </div>
+          </div>
+
+          <div class="form-row three-cols">
+            <div class="form-field">
+              <label for="res-date">Fecha *</label>
+              <input type="date" id="res-date" name="date" required>
+              <span class="field-error" id="err-date"></span>
+            </div>
+            <div class="form-field">
+              <label for="res-time">Hora aproximada *</label>
+              <select id="res-time" name="time" required>
+                <option value="">Selecciona hora</option>
+                <option value="11:30">11:30</option>
+                <option value="12:30">12:30</option>
+                <option value="13:30">13:30</option>
+                <option value="14:30">14:30</option>
+                <option value="15:30">15:30</option>
+                <option value="16:30">16:30</option>
+              </select>
+              <span class="field-error" id="err-time"></span>
+            </div>
+            <div class="form-field">
+              <label for="res-guests">Personas *</label>
+              <input type="number" id="res-guests" name="guests" min="1" max="25" value="2" required>
+              <span class="field-error" id="err-guests"></span>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="res-notes">Preferencias de picante, alergias o platos de interés</label>
+            <textarea id="res-notes" name="notes" rows="3" placeholder="Ej. Mesa cerca de la ventana, 2 ceviches sin picante..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">Generar solicitud de reserva</button>
+
+          <div class="form-confirmation hidden" id="form-confirmation" role="status" aria-live="polite">
+            <h3>Solicitud lista para confirmar</h3>
+            <p id="confirmation-summary"></p>
+            <div class="confirmation-actions">
+              <button type="button" class="btn btn-secondary" id="copy-reservation-btn">Copiar resumen</button>
+              <button type="button" class="link-btn" id="new-reservation-btn">Hacer otra consulta</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Panel lateral de Mi Selección (Presupuesto / Lista de platos) -->
+  <div class="drawer-backdrop hidden" id="drawer-backdrop" aria-hidden="true"></div>
+  <aside class="selection-drawer" id="selection-drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" hidden>
+    <div class="drawer-header">
+      <div>
+        <p class="eyebrow">Resumen de platos</p>
+        <h2 id="drawer-title">Mi Selección BalPari</h2>
+      </div>
+      <button type="button" class="drawer-close" id="close-drawer-btn" aria-label="Cerrar panel de selección">&times;</button>
+    </div>
+
+    <div class="drawer-body" id="drawer-items">
+      <!-- Renderizado por script.js -->
+    </div>
+
+    <div class="drawer-footer">
+      <div class="drawer-total-row">
+        <span>Total estimado</span>
+        <strong id="drawer-total">S/ 0.00</strong>
+      </div>
+      <div class="drawer-actions">
+        <button type="button" class="btn btn-primary btn-full" id="drawer-to-reservation-btn">Usar en mi reserva</button>
+        <button type="button" class="btn btn-secondary btn-full" id="clear-selection-btn">Vaciar lista</button>
+      </div>
+    </div>
+  </aside>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-brand">BalPari · Cevichería &amp; Cocina Marina</p>
+        <p class="footer-copy">Ceviche de pescado, leche de tigre, sudado de pescado, arroz con mariscos y sabores del mar peruano.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#especialidades">Especialidades</a>
+        <a href="#carta">La Carta</a>
+        <a href="#horarios">Horarios</a>
+        <a href="#reservas">Reservas</a>
+      </div>
+      <p class="footer-legal">&copy; <span id="current-year">2026</span> BalPari Cevichería. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
